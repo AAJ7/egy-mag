@@ -1,0 +1,27 @@
+.dot {
+    background: {
+      color: #00A550 !important;
+    }
+
+    ;
+    border-radius: 50% !important;
+    height: 10px !important;
+    width: 10px !important;
+
+    margin: {
+      left: 27px !important;
+    }
+
+    ;
+  }
+
+  img {
+    & {
+      transition: transform .3s ease-in-out !important;
+      cursor: pointer !important;
+    }
+
+    &:hover {
+      transform: scale(1.1) !important;
+    }
+  }

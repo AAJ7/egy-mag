@@ -1,0 +1,14 @@
+h2 {
+  color: #00A550 !important;
+}
+
+.card img {
+  & {
+    transition: transform .3s ease-in-out !important;
+    cursor: pointer !important;
+  }
+
+  &:hover {
+    transform: scale(1.2) !important;
+  }
+}

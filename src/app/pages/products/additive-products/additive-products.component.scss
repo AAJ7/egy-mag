@@ -1,0 +1,32 @@
+.container-fluid {
+  & {
+    width: 100% !important;
+
+    background: {
+      size: cover !important;
+      position: center !important;
+      repeat: no-repeat !important;
+      attachment: fixed !important;
+    }
+
+    ;
+    -webkit-background-size: cover !important;
+    -moz-background-size: cover !important;
+    -o-background-size: cover !important;
+  }
+
+  h2{
+    color: #00A550 !important;
+  }
+
+  img {
+    & {
+      transition: transform .3s ease-in-out !important;
+      cursor: pointer !important;
+    }
+
+    &:hover {
+      transform: scale(1.2) !important;
+    }
+  }
+}

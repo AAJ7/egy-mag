@@ -1,0 +1,28 @@
+h2 {
+  color: #00A550 !important;
+}
+.dot {
+  background: {
+    color: black !important;
+  };
+  height: 6px !important;
+  width: 6px !important;
+  border-radius: 50% !important;
+}
+.container {
+  & {
+    width: 100% !important;
+
+    background: {
+      size: cover !important;
+      position: center !important;
+      repeat: no-repeat !important;
+      attachment: scroll !important;
+    }
+
+    ;
+    -webkit-background-size: cover !important;
+    -moz-background-size: cover !important;
+    -o-background-size: cover !important;
+  }
+}

@@ -1,0 +1,64 @@
+<div class="container-fluid" [defaultImage]="defaultImage" [lazyLoad]="bgImage"></div>
+<div class="container">
+  <h1 class="text-center display-1 p-5">Egy Mag</h1>
+
+  <div class="row mt-5">
+    <div class="col-lg-4 col-md-6 col-sm-12 mb-md-5 mb-sm-5 mb-5">
+      <div class="card">
+        <img class="card-img-top" [defaultImage]="defaultImage" [lazyLoad]="cardImage1" alt="Card image cap"
+          loading="lazy">
+        <div class="card-body">
+          <p class="card-text">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Obcaecati at vero ex
+            temporibus? Vero eaque mollitia delectus aspernatur enim nisi non quam eum veniam voluptatibus excepturi
+            dicta amet, ipsa repudiandae!</p>
+        </div>
+      </div>
+    </div>
+    <div class="col-lg-4 col-md-6 col-sm-12 mb-md-5 mb-sm-5 mb-5">
+      <div class="card">
+        <img class="card-img-top" [defaultImage]="defaultImage" [lazyLoad]="cardImage2" alt="Card image cap"
+          loading="lazy">
+        <div class="card-body">
+          <p class="card-text">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Obcaecati at vero ex
+            temporibus? Vero eaque mollitia delectus aspernatur enim nisi non quam eum veniam voluptatibus excepturi
+            dicta amet, ipsa repudiandae!</p>
+        </div>
+      </div>
+    </div>
+    <div class="col-lg-4 col-md-6 col-sm-12">
+      <div class="card">
+        <img class="card-img-top" [defaultImage]="defaultImage" [lazyLoad]="cardImage3" alt="Card image cap"
+          loading="lazy">
+        <div class="card-body">
+          <p class="card-text">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Obcaecati at vero ex
+            temporibus? Vero eaque mollitia delectus aspernatur enim nisi non quam eum veniam voluptatibus excepturi
+            dicta amet, ipsa repudiandae!</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+<div class="container">
+  <h2 class="text-center display-2 p-5">They talk about EGY MAG</h2>
+  <div class="row mt-5">
+    <div class="col-lg-3 col-md-6 col-sm-12 text-center mb-md-5 mb-sm-5 mb-5">
+      <img [defaultImage]="defaultImage" [lazyLoad]="logoImage" class="w-75" alt="logo" loading="lazy">
+    </div>
+    <div class="col-lg-3 col-md-6 col-sm-12 text-center mb-md-5 mb-sm-5 mb-5">
+      <img [defaultImage]="defaultImage" [lazyLoad]="logoImage" class="w-75" alt="logo" loading="lazy">
+    </div>
+    <div class="col-lg-3 col-md-6 col-sm-12 text-center mb-md-5 mb-sm-5 mb-5">
+      <img [defaultImage]="defaultImage" [lazyLoad]="logoImage" class="w-75" alt="logo" loading="lazy">
+    </div>
+    <div class="col-lg-3 col-md-6 col-sm-12 text-center mb-md-5 mb-sm-5 mb-5">
+      <img [defaultImage]="defaultImage" [lazyLoad]="logoImage" class="w-75" alt="logo" loading="lazy">
+    </div>
+  </div>
+</div>
+<div class="container">
+  <video loop muted autoplay (loadedmetadata)="loadedmetadata($event)" (canplay)="canplay($event)"
+    class="mb-md-5 mb-sm-5 mb-5">
+    <source src="../../../../assets/video/Cows Eating Grass ASMR _ Organic Valley.mp4" type="video/mp4">
+    <!-- oncanplay="this.play()" onloadedmetadata="this.muted = true"  ((((((JS Solution)))))) -->
+  </video>
+</div>
